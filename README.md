@@ -35,7 +35,7 @@ This module demonstrates the absolute fundamentals of embedded programming: mani
 By mapping these absolute addresses to volatile pointers, the code directly interacts with the silicon, enabling the GPIO clock, configuring the mode of pin PA5, and continuously toggling the onboard LED using a basic software loop delay.
 
 ---
-
+ 
 ## 3. General Purpose Timer (TIM2 1Hz Delay)
 
 Building upon the previous module, this section eliminates inefficient software delays by leveraging a dedicated hardware timer (TIM2). The code configures the timer to generate a precise 1Hz (1-second) interval by properly setting the timer's prescaler and auto-reload values based on the system's clock frequency.
@@ -46,6 +46,8 @@ Building upon the previous module, this section eliminates inefficient software 
 *   **Flag Management:** While the hardware automatically raises the flag, the software is responsible for acknowledging it. The main loop must manually clear the flag back to 0 before the next overflow event occurs.
 
 ---
+All the projects done here are learned and based on the book - https://github.com/PacktPublishing/Bare-Metal-Embedded-C-Programming
+
 
 ## Installation and Usage
 
